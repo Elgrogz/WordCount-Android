@@ -18,16 +18,12 @@ public class WordCountTest {
         @Before
         public void before() {
             string = "it was the best of times it was the worst of times it was the age of wisdom it was the age of foolishness it was the epoch of belief it was the epoch of incredulity …";
-            wordCount = new WordCount(string);
-        }
-
-        @Test
-        public void canGetString() {
-            assertEquals("it was the best of times it was the worst of times it was the age of wisdom it was the age of foolishness it was the epoch of belief it was the epoch of incredulity …", wordCount.getString());
+            wordCount = new WordCount();
         }
 
         @Test
         public void canCountWords() {
             assertEquals(37, wordCount.getWordCount(string));
+            System.out.println(string);
         }
 }

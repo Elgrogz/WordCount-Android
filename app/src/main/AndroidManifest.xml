@@ -8,6 +8,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+    <activity
+        android:name=".WordCountActivity"
+        android:label="@string/wordcount_app_name">
+        <intent-filter>
+            <category android:name="android.intent.category.LAUNCHER"/>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent-filter>
+
+    </activity>
+
     </application>
 
 </manifest>

@@ -5,18 +5,7 @@ package com.example.user.wordcount;
  */
 public class WordCount {
 
-    private String string;
-
-    public WordCount(String string) {
-        this.string = string;
-    }
-
-    public String getString() {
-        return this.string;
-    }
-
-    public void setString(String newString) {
-        this.string = newString;
+    public WordCount() {
     }
 
     public int getWordCount(String string) {
