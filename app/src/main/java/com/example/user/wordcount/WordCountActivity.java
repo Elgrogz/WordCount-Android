@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.HashMap;
+
 /**
  * Created by user on 13/12/2016.
  */
@@ -32,7 +34,10 @@ public class WordCountActivity extends AppCompatActivity {
                 WordCount wordCount = new WordCount();
                 int output = wordCount.getWordCount(input);
                 String totalCount = Integer.toString(output);
+                HashMap<String, Integer> wordHash = wordCount.eachWordTotals(input);
                 outputText.setText(totalCount);
+                outputText.setText(wordHash.toString());
+
             }
         });
     }

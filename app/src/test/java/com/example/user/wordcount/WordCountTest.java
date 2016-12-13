@@ -26,4 +26,9 @@ public class WordCountTest {
             assertEquals(37, wordCount.getWordCount(string));
             System.out.println(string);
         }
+
+        @Test
+        public void canCreateHashOfWords() {
+            System.out.println(wordCount.eachWordTotals(string));
+        }
 }
